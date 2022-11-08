@@ -1,9 +1,6 @@
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #1673B3;
+  background-color: SlateBlue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,7 +47,7 @@ body {
   width: 80%;
   background: green;
   transition: all 0.3s ease-in-out;
-  background: dodgerblue;
+  background: gold;
 }
 .App:before, .App:after {
   content: "";
