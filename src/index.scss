@@ -43,14 +43,16 @@ body {
   .progress {
     height: 30px;
     border-radius: 30px;
-    background-color: rgb(232, 232, 232);
+    background-color: #16161C;
 
     &__inner {
       height: 100%;
       border-radius: 30px;
       width: 80%;
-      transition: all 0.3s ease-in-out;
-      background: SlateBlue;
+
+
+      transition: all 0.9s ease-in-out;
+      background: linear-gradient(90deg, orange 0%, yellow 100%);
     }
   }
 
