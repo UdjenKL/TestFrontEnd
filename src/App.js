@@ -4,8 +4,7 @@ import React from "react";
 const questions = [
     {
         imageUrl: '../img/1.png',
-        title: 'Как проверить значение null по типу?',
-        variants: [
+        title: 'Как проверить значение null по типу?', variants: [
             'null == typeof null',
             'var a = null ' + '\n' + '(!a && typeof a === "object")',
             'typeof null === typeof null'],
@@ -21,13 +20,13 @@ const questions = [
         correct: 1,
     },
     {
-        imageUrl: '../img/2.png',
-        title: 'Чему равен null?3',
+        imageUrl: '../img/3.jpg',
+        title: 'Почему код ниже не будет работать?',
         variants: [
-            'console.log(typeof null == "object33");',
-            'console.log(typeof null == null3);',
-            'console.log(typeof null != null3);'],
-        correct: 1,
+            'Запись console.log необходимо прописывать лишь в отдельных файлах");',
+            'Необходима точка с запятой после console.log("Hi!")',
+            'Неверно записан атрибут type'],
+        correct: 0,
     }
 
 ];
