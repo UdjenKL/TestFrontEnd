@@ -71,9 +71,9 @@ function Game({step , question, onClickVariant}) {
             <div className="progress">
                 <div style={{width: `${scaleValue}%`}} className="progress__inner"></div>
             </div>
-
-            <h1>{question.title}</h1>
-            <img src={question.imageUrl}/>
+            <br/><hr/>
+            <h1>{question.title}</h1><br/>
+            <img src={question.imageUrl}/><br/>
             <ul>
                 {
                     question.variants.map((question, index) =>
