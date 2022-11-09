@@ -10,6 +10,9 @@ const questions = [
             'typeof null === typeof null'],
         correct: 1,
     },
+    {
+        title: ''
+    }
 
 ];
 
@@ -23,19 +26,22 @@ function Result() {
     );
 }
 
-function Game({question}) {
+function Game({question, onClickVariant}) {
     return (
         <>
             <div className="progress">
                 <div style={{width: '10%'}} className="progress__inner"></div>
             </div>
+
             <h1>{question.title}</h1>
+             <img src="../img/1.png"/>
             <ul>
                 {
                     question.variants.map((question, index) =>
-                        <li key={index}>{question}</li>)
+                        <li onClick={() => onClickVariant(index)} key={index}>{question}</li>)
                 }
             </ul>
+
         </>
     );
 }
@@ -44,11 +50,17 @@ function App() {
 
     const [step, setStep] = React.useState(0);
     const question = questions[step];
+
+    const onClickVariant = (index) => {
+        // console.log(step,index);
+        console.log(step + 1)
+    }
+
     console.log(question);
 
     return (
         <div className="App">
-            <Game question={question}/>
+            <Game question={question} onClickVariant={onClickVariant}/>
             {/*<Result />*/}
         </div>
     );

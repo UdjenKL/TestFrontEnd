@@ -8,10 +8,11 @@ body {
 }
 
 .App {
-  width: 1000px;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 30px;
-  padding: 70px;
-  background-color: #fff;
+  padding: 20px;
+  background-color: #16161C;
   position: relative;
 }
 .App .result {
@@ -36,30 +37,18 @@ body {
   width: 150px;
 }
 .App .progress {
-  height: 50px;
+  height: 30px;
   border-radius: 30px;
   background-color: rgb(232, 232, 232);
-  margin-bottom: 25px;
 }
 .App .progress__inner {
   height: 100%;
   border-radius: 30px;
   width: 80%;
-  background: green;
   transition: all 0.3s ease-in-out;
-  background: gold;
+  background: SlateBlue;
 }
-.App:before, .App:after {
-  content: "";
-  display: block;
-  height: 50px;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.App:before {
+.App:before, .App:before {
   width: 95%;
   bottom: -10px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -73,12 +62,15 @@ body {
 }
 .App h1 {
   margin: 0;
+  padding: 10px;
+  color: white;
 }
 .App ul {
   list-style: none;
   padding: 0;
 }
 .App ul li {
+  background: rgb(232, 232, 232);
   padding: 15px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -88,6 +80,11 @@ body {
 }
 .App ul li:hover {
   border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.App img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
